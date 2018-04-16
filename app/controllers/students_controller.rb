@@ -22,6 +22,9 @@ class StudentsController < ApplicationController
   def edit
   end
 
+  def new
+  end
+
   private
 
   def find_student
