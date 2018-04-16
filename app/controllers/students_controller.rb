@@ -1,12 +1,16 @@
 class StudentsController < ApplicationController
   def show
-
+    find_student
   end
 
   def index
+    @students = Student.all
   end
 
   def create
+    @student = Student.new(student_params)
+    @student.save
+    redirect_to student_path(@student)
   end
 
   def update
