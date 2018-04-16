@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
   def update
     @student = find_student
     @student.update(student_params)
-    redirect_to student_path(@student)
+    redirect_to students_path(@student)
   end
 
   def edit
