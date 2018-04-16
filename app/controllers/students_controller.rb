@@ -20,6 +20,7 @@ class StudentsController < ApplicationController
   end
 
   def edit
+    @student = find_student
   end
 
   def new
