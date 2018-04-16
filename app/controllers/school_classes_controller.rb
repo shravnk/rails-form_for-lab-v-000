@@ -4,7 +4,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def index
-    @school_classs = school_class.all
+    @school_classs = SchoolClass.all
   end
 
   def create
@@ -25,7 +25,7 @@ class SchoolClassesController < ApplicationController
   private
 
   def find_school_class
-    @school_class = school_class.find(params[:id])
+    @school_class = SchoolClass.find(params[:id])
   end
 
   def school_class_params
