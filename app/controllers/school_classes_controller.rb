@@ -22,6 +22,9 @@ class SchoolClassesController < ApplicationController
   def edit
   end
 
+  def new
+  end
+
   private
 
   def find_school_class
