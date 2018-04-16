@@ -20,6 +20,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def edit
+    @school_class = find_school_class
   end
 
   def new
